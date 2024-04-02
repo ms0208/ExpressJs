@@ -1,0 +1,32 @@
+Authentication patterns
+1. Stateful = which maintains state or data or server side.
+2. Stateless = Which has no state.
+// Statefull
+example:-
+parking ticket by parking man who parked a customer vehicles.
+parking number =  Number 24
+NUMBER 24: DLXXXX123 / noted. 
+
+State :
+Number 24 : DLXXXX123
+so state is a data who maped with other object.
+its a a statemaintained.
+
+Architecture:-
+Client -> username/passowrd -> server.
+server -> session uid -> client.  id= uid:367
+server keep a track in there state
+when client go to  server its show a id which is uid:367
+
+client -> get/users  | uid:367: -> server.
+server-> response to -> client . this statefull work is done.
+
+// Method to transfer uid:-
+1. cookies (serverside in ejs) in Browesers
+2. response 
+3. headers. (REST API)
+
+// express flow:-
+client -> Auth Middleware -> endpoint route.
+Auth Middleware = checks for cookie value or uid, if valid calls next() else rejects the request.
+

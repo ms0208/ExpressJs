@@ -1,0 +1,10 @@
+// REST API 
+
+GET /users- List all users
+GET /user/n - nth user id  
+
+POST /users - Create new user
+
+PATCH(PUT)/user/nth - Edit the user with ID nth 
+
+DELETE /users/nth - Delete the User with ID nth.
